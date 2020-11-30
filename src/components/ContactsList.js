@@ -77,7 +77,7 @@ class ContactsList extends React.Component {
           email: response.data.myDetails.emailAddresses[0].value,
           photo: response.data.myDetails.photos[0].url
         });
-        console.log(response);
+        //console.log(response);
       })
       .catch(function(error) {
         // handle error
