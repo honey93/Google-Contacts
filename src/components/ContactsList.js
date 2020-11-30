@@ -48,6 +48,33 @@ const Loading = styled.div`
   font-size: 58px;
 `;
 
+const Heading = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 48px;
+  padding-right: 120px;
+  color: #B0C6FF;
+  margin-bottom:10px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+`;
+
+const InndividualHeading = styled.div`
+text-align:left;
+width:33%;
+box-size:border-box;
+
+@media (max-width: 768px) {
+  width:100%;
+  padding: 0 10px;
+}
+
+
+`;
+
 class ContactsList extends React.Component {
   constructor(props) {
     super(props);
@@ -112,6 +139,23 @@ class ContactsList extends React.Component {
           <ContactsTitle>Contacts</ContactsTitle>
           <Count> ({this.state.contacts.length})</Count>
         </ContactsHeading>
+
+        <Heading>
+          <InndividualHeading> Name </InndividualHeading>
+          <InndividualHeading> Email</InndividualHeading>
+          <InndividualHeading>Phone Numbers</InndividualHeading>
+        </Heading>
+
+
+        {/* <IndividualContact
+          details={{
+            name: "Honey",
+            email: "thakuria.honey@gmail.com",
+            phone: "9924191992",
+            photo: ""
+          }}
+        /> */}
+
         {contacts}
       </ListParent>
     );
