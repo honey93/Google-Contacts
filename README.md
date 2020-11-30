@@ -1,4 +1,4 @@
-#Google Contacts Application
+# Google Contacts Application
 This application will help you to browse through your Google Contacts 
 Open [hosted app](https://contact-g.herokuapp.com/) to view it in the browser.
 
