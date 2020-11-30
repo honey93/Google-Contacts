@@ -17,6 +17,10 @@ const HeaderParent = styled.div`
   box-sizing: border-box;
 `;
 
+const Image = styled.img`
+border-radius:50%;
+`;
+
 const HeaderChildLeft = styled.div`
   display: flex;
   flex-direction: row;
@@ -44,12 +48,12 @@ class Header extends React.Component {
       <HeaderParent>
         <HeaderChildLeft>
           <div>
-            <img src={Logout} />
+            <Image src={this.props.details.photo} width="40" />
           </div>
 
           <HeaderChildText>
-            <UserName>Alex Trust</UserName>
-            <div>alextrust@gmail.com</div>
+            <UserName>{this.props.details.name}</UserName>
+            <div>{this.props.details.email}</div>
           </HeaderChildText>
         </HeaderChildLeft>
 
