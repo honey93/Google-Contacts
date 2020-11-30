@@ -1,9 +1,10 @@
-# Google Contacts Application
+# Google Contacts Application (UI)
 This application will help you to browse through your Google Contacts.\
 Open [hosted app](https://contact-g.herokuapp.com/) to view it in the browser.
 
 
-
+##  Backend Application
+To see the backend code, visit [Backend code](https://github.com/honey93/Google-Contacts-Backend/tree/main)
 
 # Getting Started with Create React App
 
